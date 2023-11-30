@@ -1,0 +1,59 @@
+.navbar{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+li img{
+    width: 5vw;
+    margin-right: 80vw;
+}
+ 
+#products{
+    position: absolute;
+    top:6vh;
+}
+
+#Tactical-Gear{
+    margin-top: 15vh;
+    margin-left: 8vw;
+    width: 25vw;
+}
+
+#Tactical-Gear img{
+    width: 22vw;
+    padding:0;
+    margin: 0;
+    border: 3px solid darkblue;;
+}
+
+#Tactical-Gear h1{
+    font-size: 3rem;
+    position: absolute;
+    right:0;
+    top:30vh;
+    margin-right: 20vw;
+}
+
+#Tactical-Gear p{
+    font-size:2rem;
+    position: absolute;
+    right:0;
+    top: 50vh;
+    margin-right: 20vw;
+}
+
+.products{
+    border: 4px solid black;
+}
+
+.products .item{
+    border: 2px solid black;
+    margin: 1rem;
+    display:inline-block;
+}
