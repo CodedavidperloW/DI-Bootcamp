@@ -1,5 +1,6 @@
 body {
     margin: 0;
+   
     padding: 0;
     background: url(/images/soldiers_march.webp) no-repeat center center fixed;
     background-size: cover;
@@ -18,7 +19,7 @@ body {
 .navbar img {
     height: 8vh;
     margin-right: 3vw;
-    padding:0;
+    padding: 0;
 }
 
 
@@ -59,69 +60,69 @@ body {
     display: flex;
     align-items: center;
     border: none
-
 }
 
-.main-section{
-    display:flex;
+.main-section {
+    display: flex;
     flex-direction: column;
     position: absolute;
     align-items: center;
     justify-content: center;
     width: 55vw;
     height: 30vh;
-    top:35%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(128, 128, 128, .5);
 }
 
-#subscribe{
+#subscribe {
     padding: 1rem;
-    display:flex;
+    display: flex;
     flex-wrap: column;
     justify-content: center;
     align-items: center;
-height: 26vh;
-border: 3px solid hsl(240, 100%, 50%);
-background-color: rgb(0, 0, 255, .5)
+    height: 26vh;
+    border: 3px solid hsl(240, 100%, 50%);
+    background-color: rgb(0, 0, 255, .5)
 }
 
-.text p{
-    font-family:'Agdasima', sans-serif;
+.text p {
+    font-family: 'Agdasima', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Oswald', sans-serif;
+    ;
     display: inline-block;
     border: 2px solid white;
     padding: 1rem;
     background-color: rgb(245, 245, 219, .5);
-    color:white;
+    color: white;
     font-size: 2rem;
 }
 
-.submit-area-and-button{
-    display:flex;
+.submit-area-and-button {
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 10vh;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-input{
-    display:flex;
+input {
+    display: flex;
     width: 18vw;
     height: 5vh;
     border-radius: 12px;
     margin: 1rem;
     padding: 2px;
-    font-family:'Agdasima', sans-serif;
+    font-family: 'Agdasima', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Oswald', sans-serif;
@@ -130,9 +131,9 @@ input{
 }
 
 
-button{
+button {
     margin: 10px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: 3px solid purple;
@@ -140,49 +141,128 @@ button{
     height: 4vh;
     font-size: 18px;
     padding: 1vw;
-    font-family:'Agdasima', sans-serif;
+    font-family: 'Agdasima', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Oswald', sans-serif;
+    ;
 }
 
-#footer-vids-descriptions{
-    display:flex;
+#footer-vids-descriptions {
+    display: flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     margin-bottom: 2vh;
 }
 
-.video-one, .video-two, .video-three {
+.video-one,
+.video-two,
+.video-three {
     flex: 1;
     text-align: center;
 }
 
-.video-one iframe, .video-two iframe, .video-three iframe{
+.video-one iframe,
+.video-two iframe,
+.video-three iframe {
     margin-bottom: 1vh;
 }
 
 #footer-vids-descriptions p {
-    font-family:'Agdasima', sans-serif;
+    font-family: 'Agdasima', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Oswald', sans-serif;
+    ;
     padding: 4px;
     border: 2px solid black;
-    display:inline-block;
+    display: inline-block;
     background-color: antiquewhite;
     font-weight: bold;
     transition: transform 0.3s ease;
 }
 
 
-#footer-vids-descriptions p:hover{
+#footer-vids-descriptions p:hover {
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 1280px) {}
 
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {
+    .navbar img {
+        height: 3vh;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left:42%
+    }
+
+    #subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        height: 150vh
+    }
+
+    #subscribe p {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .submit-area-and-button {
+        height: 18vh;
+    }
+
+    .submit-area-and-button button {
+        display: flex;
+        flex-grow: 1;
+        width: 36vw;
+        font-size: 2rem;
+        padding: 20px;
+        height: 8vh;
+    }
+
+    input {
+        letter-spacing: 0;
+        ;
+    }
+
+
+    #footer-vids-descriptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 145%;
+        left: 42%;
+        transform: translate(-50%, -50%)
+    }
+
+    .video-one iframe,
+    .video-two iframe,
+    .video-three iframe {
+        width: 100%
+    }
+
+    .logo{
+        margin-right: 15vw;
+    }
+
+}
 
 
 /*
