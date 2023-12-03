@@ -57,3 +57,16 @@ li img{
     margin: 1rem;
     display:inline-block;
 }
+
+.item {
+    width: 30vw;
+}
+
+
+.item h2, .item p {
+    text-align: center;
+}
+
+.item img{
+    max-width: 100%;;
+}
