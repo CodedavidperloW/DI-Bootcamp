@@ -1,3 +1,8 @@
+body{
+    margin:0;
+    padding:0;
+}
+
 .navbar{
     border: 1px solid black;
     display: inline-block;
@@ -56,10 +61,12 @@ li img{
     border: 2px solid black;
     margin: 1rem;
     display:inline-block;
+    text-align: center;
 }
 
 .item {
-    width: 30vw;
+    width: 20vw;
+    padding: 3vh
 }
 
 
@@ -68,5 +75,31 @@ li img{
 }
 
 .item img{
-    max-width: 100%;;
+  border: 1px solid blue;
 }
+
+.product-name{
+    font-family: 'Agdasima', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+}
+
+.product-description{
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;  
+}
+
+.price{
+    font-family: 'Agdasima', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+font-weight: 700;
+}
+/*margin-left: 22%;  
