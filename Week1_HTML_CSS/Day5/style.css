@@ -10,11 +10,12 @@ html {
 }
 
 .navbar {
+    box-shadow: 1px 1px 12px 1px;
     border: 1px solid black;
     display: inline-block;
     width: 100%;
     text-align: left;
-    background-color: rgba(129, 97, 62, 1); /* Coyote Brown */
+    background-color: rgba(129, 97, 62, 1); 
 }
 
 .navbar li {
@@ -24,11 +25,25 @@ html {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Ysabeau SC', sans-serif;
+    font-size: 2rem;
 }
 
 li img {
-    width: 5vw;
+    width: 6vw;
     margin-right: 80vw;
+}
+
+#link{
+    position: absolute;
+    right:3vw;
+    top:4vh;
+    color:white;
+}
+
+#link:hover{
+    background-color: rgba(219, 201, 161, .5); /* Sand color */
+    
+    
 }
 
 #Tactical-Gear h1, p{
@@ -37,6 +52,7 @@ li img {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Ysabeau SC', sans-serif;
+    text-shadow: 1px 2px 2px;
 }
 
 #products {
@@ -60,8 +76,7 @@ li img {
     width: 22vw;
     padding: 0;
     margin: 0;
-    border: 3px solid darkblue;
-    ;
+    box-shadow: 3px 3px 13px;    
 }
 
 #Tactical-Gear h1 {
@@ -69,7 +84,7 @@ li img {
     position: absolute;
     right: 0;
     top: 30vh;
-    margin-right: 20vw;
+    margin-right: 25vw;
 }
 
 #Tactical-Gear p {
@@ -77,12 +92,14 @@ li img {
     position: absolute;
     right: 0;
     top: 50vh;
-    margin-right: 20vw;
+    margin-right: 10vw;
 }
 
 .products {
-    border: 4px solid black;
     margin: 3vh 10vw;
+    background-color: rgba(107, 142, 35, .2); /* Olive Drab */
+    box-shadow: 3px 3px 12px 8px;
+    
 }
 
 .products .item {
@@ -90,7 +107,8 @@ li img {
     margin: 1rem;
     display: inline-block;
     text-align: center;
-
+    box-shadow: 1px 1px 6px 4px;
+    
 }
 
 .item {
@@ -108,6 +126,7 @@ li img {
 .item img {
     border: 1px solid blue;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 1px 12px 1px;
 }
 
 .item img:hover {
@@ -120,7 +139,8 @@ li img {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     transition: transform 0.3s ease-in-out;
-
+    box-shadow: 1px 1px 12px 1px;
+    
 }
 
 button:hover {
@@ -147,6 +167,8 @@ button:hover {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Ysabeau SC', sans-serif;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 .price {
@@ -157,6 +179,9 @@ button:hover {
     font-family: 'Ysabeau SC', sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
+    text-shadow: 1px 1px 10px;
+    color: rgba(129, 97, 62, 1); /* Coyote Brown */
+
 }
 
 /*margin-left: 22%;  
