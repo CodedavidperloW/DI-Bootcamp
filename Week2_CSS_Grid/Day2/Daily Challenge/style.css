@@ -1,0 +1,31 @@
+body{
+    margin:0;
+}
+
+.blocks{
+    display:flex;
+}
+.left, .center, .right{
+    width: 8vw;
+    height: 8vh;
+    margin:1rem;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.blocks-left{
+    display:flex;
+    flex-direction: column;
+}
+
+.blocks-center{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks-right{
+    display:flex;
+    flex-direction: column;
+}
