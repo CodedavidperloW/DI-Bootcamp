@@ -36,21 +36,35 @@ header {
     box-shadow: 1px 1px 1px rgb(128, 128, 128, .2);
 }
 
+.profiles {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid rgb(128, 128, 128, .2);
+    box-shadow: 1px 1px 1px rgb(128, 128, 128, .2);
+}
+
 .profile1{
     display:flex;
     flex-direction: column;
+    position: relative;
+    align-items: center;
 }
 .quote {
     background-color: whitesmoke;
     color: gray;
     padding: 1rem;
     padding-bottom: 5vh;
+    z-index: -1;
+    width: 100%;
 }
 
 .profile1 .details {
     background-color: tomato;
     color:white;
     padding: 1rem;
+    width:100%
 }
 
 .profile1 .name{
@@ -65,8 +79,8 @@ header {
 
 .profile1 img{
     width:5vw;
-    left:10vw;
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
+    position: absolute;
+    top:40%;
+    transform: translateY(-30%);
+    border-radius: 50%;
 }
