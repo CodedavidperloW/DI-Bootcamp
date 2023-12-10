@@ -9,6 +9,8 @@ header {
     font-size: 3rem;
     text-align: center;
     justify-content: center;
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .top-section {
@@ -27,13 +29,16 @@ header {
     justify-content: center;
 }
 
-.profiles {
-    margin-top: 10vh;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    border: 1px solid rgb(128, 128, 128, .2);
-    box-shadow: 1px 1px 1px rgb(128, 128, 128, .2);
+.section-one h1 {
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: blueviolet;
+    text-shadow: 1px 1px 1px;
+}
+
+.section-one h4 {
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .profiles {
@@ -41,16 +46,28 @@ header {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    border: 1px solid rgb(128, 128, 128, .2);
-    box-shadow: 1px 1px 1px rgb(128, 128, 128, .2);
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
 }
 
-.profile1{
-    display:flex;
+.profile1 {
+    display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
+    text-align: center;
+    position: relative;
 }
+
+.profile1 img {
+    width: 3vw;
+    position: absolute;
+    top: 27%;
+    border-radius: 50%;
+}
+
+
+
 .quote {
     background-color: whitesmoke;
     color: gray;
@@ -62,25 +79,77 @@ header {
 
 .profile1 .details {
     background-color: tomato;
-    color:white;
+    color: white;
+    width: 100%;
     padding: 1rem;
-    width:100%
 }
 
-.profile1 .name{
+.profile1 .name {
     font-weight: bold;
-    margin:0;
-    padding-top:7vh;
+    margin-top: 3vh;
 }
 
-.quote, .details{
-    margin:0;
+
+
+.quote,
+.details {
+    margin: 0;
 }
 
-.profile1 img{
-    width:5vw;
-    position: absolute;
-    top:40%;
-    transform: translateY(-30%);
+
+.profile2 {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile2 .details {
+    background-color: purple;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+}
+
+.profile2 img {
+    width: 5vw;
+    position: relative;
     border-radius: 50%;
+    top: 50%;
+}
+
+.profile2 .name {
+    font-weight: bold;
+    margin-top: 1vh;
+    padding-top: 3vh;
+}
+
+.profile3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile3 .quote {
+    padding: 1.5rem;
+    padding-bottom: 4vh
+}
+
+.profile3 .details {
+    background-color: turquoise;
+    padding: 1.5rem;
+    width: 100%;
+    color: white;
+}
+
+.profile3 img {
+    width: 4vw;
+    border-radius: 50%;
+    position: relative;
+    top: 45%;
+}
+
+.profile3 .name {
+    padding-top: 3vh;
+    font-weight: bold;
 }
