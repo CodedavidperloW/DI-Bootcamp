@@ -165,11 +165,6 @@ console.log(newExample[0].lastname)
 
 
 //So now to access
-
-
-
-
-
 // //switch
 // var day = 7;
 // switch (day)
