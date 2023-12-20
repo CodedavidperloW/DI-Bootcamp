@@ -104,6 +104,44 @@
 // }
 // myBill()
 
-//Exercise 5
+//Exercise 5: What's in my Wallet?
 
+
+function changeEnough(itemPrice, amountOfChange) {
+    
+    let totalValueOfChangeCombined = 0
+    
+    amountOfChange[0] = amountOfChange[0] * .25
+    amountOfChange[1] = amountOfChange[1] * .10
+    amountOfChange[2] = amountOfChange[2] * .05
+    amountOfChange[3] = amountOfChange[3] * .01
+    
+    for (let i = 0; i < amountOfChange.length; i++) {
+        totalValueOfChangeCombined += amountOfChange[i]
+        
+    }
+    
+    if (totalValueOfChangeCombined > itemPrice) {
+        console.log("You can buy it!")
+        return true
+    }
+    else {
+        console.log("Better not to buy it!")
+        return false
+    }
+}
+let result = changeEnough(4.25, [25, 20, 5, 0])
+console.log(`If you want to know: ${result}`)
+
+
+
+
+
+
+// let example = [.25, .10, .05, .01]
+// let totalAmount = 0;
+// for (let i=0; i<example.length; i++){
+//     totalAmount+=example[i]
+// }
+// console.log(totalAmount)
 
