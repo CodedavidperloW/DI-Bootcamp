@@ -144,65 +144,65 @@
 //Exercise 6: Vacation Costs
 
 //Hotel Price
-function hotelCost(){
-    let pricePerNight= 140;
-    let questionA = prompt("How many nights will you be staying?")
-    let questionAValue= Number(questionA)
-    console.log(`You've selected ${questionAValue} nights`)
-    while(isNaN(questionAValue)|| questionA <=0){
-        questionA = prompt("Please enter a valid number")
-        questionAValue= Number(questionA)
-    }
-    let totalPriceOfHotel = pricePerNight * questionAValue
-    return totalPriceOfHotel
-}
-let hotelP=hotelCost()
+// function hotelCost(){
+//     let pricePerNight= 140;
+//     let questionA = prompt("How many nights will you be staying?")
+//     let questionAValue= Number(questionA)
+//     console.log(`You've selected ${questionAValue} nights`)
+//     while(isNaN(questionAValue)|| questionA <=0){
+//         questionA = prompt("Please enter a valid number")
+//         questionAValue= Number(questionA)
+//     }
+//     let totalPriceOfHotel = pricePerNight * questionAValue
+//     return totalPriceOfHotel
+// }
+// let hotelP=hotelCost()
 
-//Plane Ride Cost
-function planeRideCost(){
-    let price
-    let destination = prompt("Select your Destination")
-    destination = destination.toLowerCase()
-    while(!/^[a-z]+$/.test(destination) || destination.length==0){
-        destination = prompt("Please select again")
-    }
-    if (destination === "london"){ price = 183}
-    else if(destination === "paris"){ price = 220}
-    else price = 300
-    return price
-}
-let planeP = planeRideCost()
+// //Plane Ride Cost
+// function planeRideCost(){
+//     let price
+//     let destination = prompt("Select your Destination")
+//     destination = destination.toLowerCase()
+//     while(!/^[a-z]+$/.test(destination) || destination.length==0){
+//         destination = prompt("Please select again")
+//     }
+//     if (destination === "london"){ price = 183}
+//     else if(destination === "paris"){ price = 220}
+//     else price = 300
+//     return price
+// }
+// let planeP = planeRideCost()
 
-//Rental Car Cost
-function rentalCarCost() {
-    let questionB = prompt("How many days would you like to rent the car?")
-    let questionBValue = (Number(questionB))
-    let totalCostPerDay = 40
-    if (questionB === null) {
-        console.log("You cancelled the selection")
-        return;
-    }
+// //Rental Car Cost
+// function rentalCarCost() {
+//     let questionB = prompt("How many days would you like to rent the car?")
+//     let questionBValue = (Number(questionB))
+//     let totalCostPerDay = 40
+//     if (questionB === null) {
+//         console.log("You cancelled the selection")
+//         return;
+//     }
 
-    while (isNaN(questionB) || questionB <= 0) {
-        questionB = prompt("Please enter a valid number")
-        questionBValue = (Number(questionB))
+//     while (isNaN(questionB) || questionB <= 0) {
+//         questionB = prompt("Please enter a valid number")
+//         questionBValue = (Number(questionB))
 
-        if (questionB === null) {
-            console.log("You cancelled the selection")
-            return;
-        }
-    }
-totalForCar = totalCostPerDay * questionBValue
-if(questionBValue>=10){
-    totalForCar = (totalCostPerDay * questionBValue)-((totalCostPerDay * questionBValue) * .05)   
-    console.log(`You got a 5% discount, the total is ${totalForCar}`) 
-}
-return totalForCar
+//         if (questionB === null) {
+//             console.log("You cancelled the selection")
+//             return;
+//         }
+//     }
+// totalForCar = totalCostPerDay * questionBValue
+// if(questionBValue>=10){
+//     totalForCar = (totalCostPerDay * questionBValue)-((totalCostPerDay * questionBValue) * .05)   
+//     console.log(`You got a 5% discount, the total is ${totalForCar}`) 
+// }
+// return totalForCar
 
-}
-let carP = rentalCarCost()
+// }
+// let carP = rentalCarCost()
 
-function totalVacationWillCost(){
-console.log(`The hotel cost: $${hotelP}, the plane cost: $${planeP} and the car cost $${carP}`)
-}
-totalVacationWillCost()
+// function totalVacationWillCost(){
+// console.log(`The hotel cost: $${hotelP}, the plane cost: $${planeP} and the car cost $${carP}`)
+// }
+// totalVacationWillCost()
