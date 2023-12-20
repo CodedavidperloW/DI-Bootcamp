@@ -104,40 +104,8 @@
 // }
 // myBill()
 
-//Exercise 5: What's in my Wallet?
 
-
-function changeEnough(itemPrice, amountOfChange) {
-    
-    let totalValueOfChangeCombined = 0
-    
-    amountOfChange[0] = amountOfChange[0] * .25
-    amountOfChange[1] = amountOfChange[1] * .10
-    amountOfChange[2] = amountOfChange[2] * .05
-    amountOfChange[3] = amountOfChange[3] * .01
-    
-    for (let i = 0; i < amountOfChange.length; i++) {
-        totalValueOfChangeCombined += amountOfChange[i]
-        
-    }
-    
-    if (totalValueOfChangeCombined > itemPrice) {
-        console.log("You can buy it!")
-        return true
-    }
-    else {
-        console.log("Better not to buy it!")
-        return false
-    }
-}
-let result = changeEnough(4.25, [25, 20, 5, 0])
-console.log(`If you want to know: ${result}`)
-
-
-
-
-
-
+//NOTES THAT HELPED ME for next exercise-->
 // let example = [.25, .10, .05, .01]
 // let totalAmount = 0;
 // for (let i=0; i<example.length; i++){
@@ -145,3 +113,96 @@ console.log(`If you want to know: ${result}`)
 // }
 // console.log(totalAmount)
 
+
+//Exercise 5: What's in my Wallet?
+// function changeEnough(itemPrice, amountOfChange) {
+
+//     let totalValueOfChangeCombined = 0
+
+//     amountOfChange[0] = amountOfChange[0] * .25
+//     amountOfChange[1] = amountOfChange[1] * .10
+//     amountOfChange[2] = amountOfChange[2] * .05
+//     amountOfChange[3] = amountOfChange[3] * .01
+
+//     for (let i = 0; i < amountOfChange.length; i++) {
+//         totalValueOfChangeCombined += amountOfChange[i]
+
+//     }
+
+//     if (totalValueOfChangeCombined > itemPrice) {
+//         console.log("You can buy it!")
+//         return true
+//     }
+//     else {
+//         console.log("Better not to buy it!")
+//         return false
+//     }
+// }
+// let result = changeEnough(4.25, [25, 20, 5, 0])
+// console.log(`If you want to know: ${result}`)
+
+//Exercise 6: Vacation Costs
+
+//Hotel Price
+function hotelCost(){
+    let pricePerNight= 140;
+    let questionA = prompt("How many nights will you be staying?")
+    let questionAValue= Number(questionA)
+    console.log(`You've selected ${questionAValue} nights`)
+    while(isNaN(questionAValue)|| questionA <=0){
+        questionA = prompt("Please enter a valid number")
+        questionAValue= Number(questionA)
+    }
+    let totalPriceOfHotel = pricePerNight * questionAValue
+    return totalPriceOfHotel
+}
+let hotelP=hotelCost()
+
+//Plane Ride Cost
+function planeRideCost(){
+    let price
+    let destination = prompt("Select your Destination")
+    destination = destination.toLowerCase()
+    while(!/^[a-z]+$/.test(destination) || destination.length==0){
+        destination = prompt("Please select again")
+    }
+    if (destination === "london"){ price = 183}
+    else if(destination === "paris"){ price = 220}
+    else price = 300
+    return price
+}
+let planeP = planeRideCost()
+
+//Rental Car Cost
+function rentalCarCost() {
+    let questionB = prompt("How many days would you like to rent the car?")
+    let questionBValue = (Number(questionB))
+    let totalCostPerDay = 40
+    if (questionB === null) {
+        console.log("You cancelled the selection")
+        return;
+    }
+
+    while (isNaN(questionB) || questionB <= 0) {
+        questionB = prompt("Please enter a valid number")
+        questionBValue = (Number(questionB))
+
+        if (questionB === null) {
+            console.log("You cancelled the selection")
+            return;
+        }
+    }
+totalForCar = totalCostPerDay * questionBValue
+if(questionBValue>=10){
+    totalForCar = (totalCostPerDay * questionBValue)-((totalCostPerDay * questionBValue) * .05)   
+    console.log(`You got a 5% discount, the total is ${totalForCar}`) 
+}
+return totalForCar
+
+}
+let carP = rentalCarCost()
+
+function totalVacationWillCost(){
+console.log(`The hotel cost: $${hotelP}, the plane cost: $${planeP} and the car cost $${carP}`)
+}
+totalVacationWillCost()
