@@ -33,24 +33,39 @@
 
 // console.log(theLists)
 
+
+
 //Exercise 2: Users and Style
 
+// let firstDiv = document.getElementsByTagName("div")[0];
+// firstDiv.classList.add("background-color")
+// console.log(firstDiv);
+// let listOfLiItems = document.getElementsByTagName("li")
+// let firstLiElement = listOfLiItems[0]
+// // console.log(firstLiElement)
+// firstLiElement.parentNode.removeChild(firstLiElement)
+// console.log(listOfLiItems[0])
 
-let firstDiv = document.getElementsByTagName("div")[0];
 
-firstDiv.classList.add("background-color")
-console.log(firstDiv);
+//Exercise 3: Change the Navbar
+
+//1
+let newId = document.getElementById("navBar")
+let newId2 = newId.setAttribute("id", "SocialNetworkNavigation")
+console.log(newId)
+//2
+let newCreatedElement = document.createElement("li")
+newCreatedElement.innerText="Logout"
+console.log(newCreatedElement)
+//3
+//First Attempt: Not Successful
+// let listedItems = document.getElementsByTagName("ul")
+// listedItems.appendChild(newCreatedElement)
+// console.log(listedItems)
+let addTheLi = document.querySelector("#SocialNetworkNavigation ul")
+//Challenging, since I forgot that I changed the id :)
+addTheLi.appendChild(newCreatedElement)
+console.log(addTheLi)
 
 
-// let totalItems = document.getElementsByTagName("li");
-// let listFirstItem = totalItems[0]
-// // console.log(listFirstItem)
-// listFirstItem.parentNode.removeChild(listFirstItem)
-// console.log(document.getElementsByTagName("li"))
 
-let listOfLiItems = document.getElementsByTagName("li")
-
-let firstLiElement = listOfLiItems[0]
-// console.log(firstLiElement)
-firstLiElement.parentNode.removeChild(firstLiElement)
-console.log(listOfLiItems[0])
