@@ -58,14 +58,21 @@ let newCreatedElement = document.createElement("li")
 newCreatedElement.innerText="Logout"
 console.log(newCreatedElement)
 //3
+//Lines 61-65 didn't work
 //First Attempt: Not Successful
 // let listedItems = document.getElementsByTagName("ul")
 // listedItems.appendChild(newCreatedElement)
 // console.log(listedItems)
+
+//corrected continuation below
 let addTheLi = document.querySelector("#SocialNetworkNavigation ul")
 //Challenging, since I forgot that I changed the id :)
 addTheLi.appendChild(newCreatedElement)
 console.log(addTheLi)
 
-
+//4
+let firstUlValue = addTheLi.firstElementChild.textContent
+console.log(firstUlValue)
+let lastUlValue = addTheLi.lastElementChild.textContent
+console.log(lastUlValue)
 
