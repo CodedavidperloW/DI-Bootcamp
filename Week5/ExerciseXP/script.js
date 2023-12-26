@@ -72,45 +72,61 @@
 // };
 
 
-//EXERCISE FOUR:
+//EXERCISE THREE:
 
-let allBoldItems;
+// let allBoldItems;
 
-function getBoldItems() {
-    allBoldItems = document.getElementsByTagName('strong')
+// function getBoldItems() {
+//     allBoldItems = document.getElementsByTagName('strong')
 
-    console.log(allBoldItems)
+//     console.log(allBoldItems)
 
-    for (let i = 0; i < allBoldItems.length; i++) {
-        allBoldItems[i].addEventListener("mouseover", highlight)
-        allBoldItems[i].addEventListener("mouseout", backToBlack)
-        console.log(allBoldItems[i].textContent)
-    }
+//     for (let i = 0; i < allBoldItems.length; i++) {
+//         allBoldItems[i].addEventListener("mouseover", highlight)
+//         allBoldItems[i].addEventListener("mouseout", backToBlack)
+//         console.log(allBoldItems[i].textContent)
+//     }
+// }
+
+// getBoldItems()
+
+// function highlight(event) {
+//    //First I tried it like this:
+//     // for (let i = 0; i < elements.length; i++) {
+//     //     elements.style.color = 'blue'
+//     //     elements.style.fontSize = '2rem'
+//     // }
+//     let element = event.target
+//         element.style.color = 'blue'
+//         element.style.fontSize = '2rem'
+// }
+
+// function backToBlack(event) {
+//     // First I tried it like this:
+//     // for (let i = 0; i < theThing.length; i++) {
+//     //     theThing.style.color = ''
+//     //     theThing.style.fontSize = ''
+//     // }
+//     let elementTwo = event.target
+//     elementTwo.style.color=''
+//     elementTwo.style.fontSize =''
+// }
+
+// EXERCISE FOUR
+let theForm = document.getElementById('MyForm')
+let theRadius = document.getElementById('radius')
+let theVolume = document.getElementById('volume')
+let theSubmit = document.getElementById('submit')
+let solutionNewLi = document.createElement('p')
+
+theSubmit.onclick = function (event) {
+    theRadius = theRadius.value
+    event.preventDefault()
+    solutionNewLi.textContent = (4 / 3) * Math.PI * Math.pow(theRadius, 3)
+    console.log(solutionNewLi);
+    theForm.appendChild(solutionNewLi)
 }
 
-getBoldItems()
-
-function highlight(event) {
-   //First I tried it like this:
-    // for (let i = 0; i < elements.length; i++) {
-    //     elements.style.color = 'blue'
-    //     elements.style.fontSize = '2rem'
-    // }
-    let element = event.target
-        element.style.color = 'blue'
-        element.style.fontSize = '2rem'
-}
-
-function backToBlack(event) {
-    // First I tried it like this:
-    // for (let i = 0; i < theThing.length; i++) {
-    //     theThing.style.color = ''
-    //     theThing.style.fontSize = ''
-    // }
-    let elementTwo = event.target
-    elementTwo.style.color=''
-    elementTwo.style.fontSize =''
-}
 
 
 
