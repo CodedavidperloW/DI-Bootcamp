@@ -53,35 +53,35 @@
 // }
 
 //Exercise Three: Drag & Drop
-let isItDragging = false
-let draggableBox = document.getElementById('box')
-let offsetX
-let offsetY;
-draggableBox.addEventListener('mousedown', (e) => {
-    isItDragging = true;
-    offsetX = e.clientX - draggableBox.getBoundingClientRect().left;
-    offsetY = e.clientY - draggableBox.getBoundingClientRect().top;
-    draggableBox.style.cursor = 'grabbing';
-    console.log('Mouse coordinates:', e.offsetX, e.offsetY)
-})
+// let isItDragging = false
+// let draggableBox = document.getElementById('box')
+// let offsetX
+// let offsetY;
+// draggableBox.addEventListener('mousedown', (e) => {
+//     isItDragging = true;
+//     offsetX = e.clientX - draggableBox.getBoundingClientRect().left;
+//     offsetY = e.clientY - draggableBox.getBoundingClientRect().top;
+//     draggableBox.style.cursor = 'grabbing';
+//     console.log('Mouse coordinates:', e.offsetX, e.offsetY)
+// })
 
-document.addEventListener('mousemove', (e) => {
+// document.addEventListener('mousemove', (e) => {
 
-    if (isItDragging) {
+//     if (isItDragging) {
 
-        const x = e.clientX - offsetX;
-        const y = e.clientY - offsetY;
+//         const x = e.clientX - offsetX;
+//         const y = e.clientY - offsetY;
 
-        draggableBox.style.left = `${x}px`
-        draggableBox.style.top = `${y}px`
+//         draggableBox.style.left = `${x}px`
+//         draggableBox.style.top = `${y}px`
 
-    }
-});
+//     }
+// });
 
-document.addEventListener('mouseup', ()=>{
-    if(isItDragging){
-        isItDragging = false;
+// document.addEventListener('mouseup', ()=>{
+//     if(isItDragging){
+//         isItDragging = false;
         
-        draggableBox.style.cursor = 'grab'
-    }
-})
+//         draggableBox.style.cursor = 'grab'
+//     }
+// })
