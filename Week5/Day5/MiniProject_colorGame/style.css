@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: none;
+}
+
+#colorGame-container {
+    display: grid;
+    grid-template-columns: repeat(50, 10px);
+    gap: 2px;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.theColors{
+    height: 90vh;
+    width: 25vw;
+    cursor: pointer;
+    
+}
+
+.theColors div{
+    height: 4vh;
+    width: 14vw
+}
+
+.color-red {
+    background-color: red !important;
+
+    
+}
+
+.color-orange {
+    background-color: orange;
+    
+}
+
+.color-yellow {
+    background-color: yellow;
+    
+}
+
+.color-blue {
+    background-color: blue;
+    
+}
+
+.color-green {
+    background-color: green;
+    
+}
+
+.color-purple {
+    background-color: purple;
+   
+}
+
+.color-pink {
+    background-color: pink;
+   
+}
+
+.color-black {
+    background-color: black;
+  
+}
+
+.color-grey {
+    background-color: grey;
+  
+}
+
+.clear{
+    width: 14vw;
+    height: 2vh;
+
+}
