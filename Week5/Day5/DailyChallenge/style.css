@@ -1,0 +1,50 @@
+body{
+    background-color: coral;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 15vh;
+}
+
+#newTaskToAdd{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addTask{
+    height: 5vh;
+    width: 20vw
+}
+button{
+    margin-top: 1vh;
+padding: 1rem;
+font-size: 2rem; 
+}
+
+
+#tasks{
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+}
+
+.x-icon img{
+    height:5vh
+}
+
+
+#taskCheckbox{
+    margin-right: 10px;
+    height: 10vh;
+    width: 5vw
+}
+
+.strike-it {
+    text-decoration: line-through;
+}
